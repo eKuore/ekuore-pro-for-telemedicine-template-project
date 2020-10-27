@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    jcenter()
+    mavenCentral()
+    maven {
+        name = "ekuore"
+        url = uri("http://165.22.74.92:80/releases")
+        credentials {
+            username = "username"
+            password = "token"
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.ekuore:ekuore-pro-for-telemedicine-engine-java:1.0.0'
+    testImplementation 'junit:junit:4.13'
+}
