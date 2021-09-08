@@ -10,7 +10,7 @@ repositories {
     mavenCentral()
     maven {
         name = "ekuore"
-        url = uri("http://165.22.74.92:80/releases")
+        url = uri("https://maven.ekuore.dev/releases")
         credentials {
             username = "username"
             password = "token"
@@ -19,6 +19,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.ekuore:ekuore-pro-for-telemedicine-engine-java:1.0.0'
+    implementation 'com.ekuore:ekuore-pro-for-telemedicine-engine-java:1.1.0'
     testImplementation 'junit:junit:4.13'
 }
